@@ -4,7 +4,6 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
-tap 'homebrew/php'
 
 # Install ZSH
 brew 'zsh'
@@ -23,9 +22,7 @@ brew 'bash'
 brew 'homebrew/dupes/grep'
 
 # Install Binaries
-brew 'awscli'
 brew 'git'
-brew 'hub'
 brew 'tree'
 brew 'mackup'
 brew 'mas'
@@ -34,28 +31,32 @@ brew 'trash'
 brew 'wget'
 
 # Development
-brew 'php71', args: ['with-debug']
-brew 'php71-intl'
-brew 'mariadb'
+brew 'chruby'
 
 # Apps
+cask 'little-snitch'
+cask 'micro-snitch'
+cask 'backblaze'
+cask 'flux'
+cask 'spotify'
+cask 'transmission'
+cask 'omnifocus-beta'
+cask 'omniplan'
+cask 'omnigraffle'
+
+cask '1password-beta'
 cask 'aerial'
-cask 'alfred'
+cask 'alfred' # launchbar, but actually, alfred looks nicer
 cask 'caffeine'
-cask 'dropbox'
 cask 'firefox'
 cask 'google-chrome'
-cask 'google-drive'
 cask 'gpgtools'
 cask 'iterm2'
 cask 'mysqlworkbench'
-cask 'phpstorm'
-cask 'quip'
 cask 'sequel-pro'
 cask 'shuttle'
 cask 'slack'
 cask 'sublime-text'
-cask 'tower'
 cask 'transmit'
 cask 'vagrant'
 cask 'virtualbox'
@@ -76,12 +77,18 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
 mas 'Gapplin', id: 768053424
-mas 'Giphy Capture', id: 668208984
+mas 'GIF Brewery by Gfycat - Capture & Make Video GIFs', id: 1081413713
 mas 'Paw', id: 584653203
 mas 'Sip', id: 507257563
 mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
+mas 'YubiKey Personalization Tool', id: 638161122
+mas 'Tyme 2', id: 1063996724
+mas 'Keynote', id: 409183694
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Deliveries: a package tracker', id: 924726344
+mas 'Microsoft Remote Desktop', id: 715768417
+mas 'WiFi Explorer', id: 494803304
+mas 'BetterSnapTool', id: 417375580
+mas 'Twitter', id: 409789998
