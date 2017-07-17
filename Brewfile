@@ -32,6 +32,7 @@ brew 'wget'
 
 # Development
 brew 'chruby'
+brew 'ruby-build'
 
 # Apps
 cask 'little-snitch'
