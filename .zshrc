@@ -88,3 +88,6 @@ source $ZSH/oh-my-zsh.sh
 # chruby stuff
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# eric aliases
+alias sshadd="ssh-add ${HOME}/.ssh/hexagon"

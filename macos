@@ -5,6 +5,24 @@
 # eric - custom
 defaults write com.apple.dock workspaces-edge-delay -float 2.0 # for bettersnaptool
 ln -s "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/" "${HOME}/ic"
+defaults write com.apple.menuextra.battery ShowPercent -string "YES" # battery percentage
+ln -s ${HOME}/.dotfiles/.zshrc ${HOME}/.zshrc
+
+# set menu bar icons correctly >_>
+defaults write com.apple.systemuiserver menuExtras -array \
+"/System/Library/CoreServices/Menu Extras/Clock.menu" \
+"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+"/System/Library/CoreServices/Menu Extras/Displays.menu" \
+"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+"/System/Library/CoreServices/Menu Extras/Volume.menu"
+
+## volume for airplay speakers
+## bluetooth for headphones
+## displays for airplay screen
+## airport for wifi, duh
+## battery becasue battery
+## clock because clock
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change

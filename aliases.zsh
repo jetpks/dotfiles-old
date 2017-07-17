@@ -11,9 +11,6 @@ alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 
-# Laravel
-alias a="php artisan"
-
 # Vagrant
 alias v="vagrant global-status"
 alias vup="vagrant up"

@@ -33,6 +33,8 @@ brew 'wget'
 # Development
 brew 'chruby'
 brew 'ruby-build'
+brew 'readline'
+brew 'with-readline' # allow gnu readline to be used w/ everything
 cask 'java'
 
 # Apps
