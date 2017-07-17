@@ -2,6 +2,9 @@
 
 # ~/.macos — https://mths.be/macos
 
+# eric - custom
+defaults write com.apple.dock workspaces-edge-delay -float 2.0 # for bettersnaptool
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -17,10 +20,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "hexagon.slush.systems"
-#sudo scutil --set HostName "hexagon.slush.systems"
-#sudo scutil --set LocalHostName "hexagon.slush.systems"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "hexagon.slush.systems"
+sudo scutil --set ComputerName "hexagon.slush.systems"
+sudo scutil --set HostName "hexagon.slush.systems"
+sudo scutil --set LocalHostName "hexagon.slush.systems"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "hexagon.slush.systems"
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
