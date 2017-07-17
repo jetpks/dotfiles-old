@@ -33,6 +33,7 @@ brew 'wget'
 # Development
 brew 'chruby'
 brew 'ruby-build'
+cask 'java'
 
 # Apps
 cask 'little-snitch'
