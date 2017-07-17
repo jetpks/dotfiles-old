@@ -1,3 +1,14 @@
+# Custom junk is at the bottom
+# except this...
+export DOTFILES=$HOME/.dotfiles
+COMPLETION_WAITING_DOTS="true"
+ZSH_CUSTOM=$DOTFILES
+
+# and this
+# aliases
+alias sshadd="ssh-add ${HOME}/.ssh/hexagon"
+source ${DOTFILES}/aliases.zsh
+
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -85,9 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+### ---- All custom below here
+
 # chruby stuff
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-
-# eric aliases
-alias sshadd="ssh-add ${HOME}/.ssh/hexagon"
