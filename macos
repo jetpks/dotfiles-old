@@ -4,6 +4,7 @@
 
 # eric - custom
 defaults write com.apple.dock workspaces-edge-delay -float 2.0 # for bettersnaptool
+ln -s "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/" "${HOME}/ic"
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
