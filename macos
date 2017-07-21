@@ -7,7 +7,8 @@ defaults write com.apple.dock workspaces-edge-delay -float 2.0 # for bettersnapt
 ln -s "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/" "${HOME}/ic"
 defaults write com.apple.menuextra.battery ShowPercent -string "YES" # battery percentage
 ln -s ${HOME}/.dotfiles/.zshrc ${HOME}/.zshrc
-ln -s ${HOME}/src/vimrc ${HOME}/.vim_runtime
+ln -s ${HOME}/src/vimrc ${HOME}/.vim_runtime # "ultimate" vim
+ln -s ${HOME}/src/spacemacs ${HOME}/.emacs.d # spacemacs
 
 # set menu bar icons correctly >_>
 defaults write com.apple.systemuiserver menuExtras -array \
