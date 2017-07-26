@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+echo <<'EOFUCKINGSTRING'
+# Stuff that needs to get added!
+  * cmd + Space for Launchbar
+  * cmd + opt + Space for spotlight
+  * cmd + ctrl + opt + Space for Finder search (collides w/spotlight search's new setting)
+
+# Stuff that needs to get fixed!
+  * those damn desktop icons
+EOFUCKINGSTRING
+
 # ~/.macos — https://mths.be/macos
 
 # eric - custom
@@ -7,7 +17,9 @@ defaults write com.apple.dock workspaces-edge-delay -float 2.0 # for bettersnapt
 ln -s "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/" "${HOME}/ic"
 defaults write com.apple.menuextra.battery ShowPercent -string "YES" # battery percentage
 ln -s ${HOME}/.dotfiles/.zshrc ${HOME}/.zshrc
-ln -s ${HOME}/src/vimrc ${HOME}/.vim_runtime
+ln -s ${HOME}/src/vimrc ${HOME}/.vim_runtime # "ultimate" vim
+#ln -s ${HOME}/src/spacemacs ${HOME}/.emacs.d # spacemacs
+ln -s ${HOME}/.dotfiles/prezto ${HOME}/.zprezto
 
 # set menu bar icons correctly >_>
 defaults write com.apple.systemuiserver menuExtras -array \

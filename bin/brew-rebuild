@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+brew uninstall --force $1
+brew install --build-from-source $1
+brew test $1 
+brew audit --strict $1
+
