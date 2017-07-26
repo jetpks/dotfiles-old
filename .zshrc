@@ -3,12 +3,24 @@
 export DOTFILES=$HOME/.dotfiles
 COMPLETION_WAITING_DOTS="true"
 ZSH_CUSTOM=$DOTFILES
+export EDITOR=vim
 
 # and this
 # aliases
 alias sshadd="ssh-add ${HOME}/.ssh/hexagon"
 source ${DOTFILES}/aliases.zsh
 
+# and this
+# chruby stuff
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# and this -- ok, i'll just say when i'm done adding custom crap
+# and add abve that now.
+#
+bindkey \^U backward-kill-line
+#
+# everythingn below is pre-fork ###########333
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -96,8 +108,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-### ---- All custom below here
-
-# chruby stuff
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
