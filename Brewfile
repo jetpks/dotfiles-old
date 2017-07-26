@@ -48,10 +48,11 @@ cask 'omnifocus-beta'
 cask 'omniplan'
 cask 'omnigraffle'
 cask 'wireshark'
+cask 'launchbar'
+cask 'dash'
 
 cask '1password-beta'
 cask 'aerial'
-cask 'alfred' # launchbar, but actually, alfred looks nicer
 cask 'caffeine'
 cask 'firefox'
 cask 'google-chrome'
