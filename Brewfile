@@ -50,6 +50,7 @@ cask 'omnigraffle'
 cask 'wireshark'
 cask 'launchbar'
 cask 'dash'
+cask 'tigervnc-viewer'
 
 cask '1password-beta'
 cask 'aerial'
