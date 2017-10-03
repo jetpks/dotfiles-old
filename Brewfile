@@ -41,6 +41,7 @@ brew 'geoip'
 brew 'asciinema'
 brew 'asciinema2gif'
 cask 'java'
+cask 'monodraw'
 
 # Apps
 cask 'karabiner-elements'
