@@ -40,6 +40,7 @@ brew 'with-readline' # allow gnu readline to be used w/ everything
 brew 'geoip'
 brew 'asciinema'
 brew 'asciinema2gif'
+brew 'docker'
 cask 'java'
 cask 'monodraw'
 
