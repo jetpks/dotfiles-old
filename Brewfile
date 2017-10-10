@@ -41,6 +41,8 @@ brew 'geoip'
 brew 'asciinema'
 brew 'asciinema2gif'
 brew 'docker'
+brew 'vaulted'
+brew 'awscli'
 cask 'java'
 cask 'monodraw'
 
