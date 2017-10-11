@@ -32,7 +32,7 @@ brew 'wget'
 
 # Development
 brew 'tmate'
-brew 'chruby'
+brew 'rbenv'
 brew 'ruby-build'
 brew 'ruby-install'
 brew 'readline'
