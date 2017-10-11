@@ -34,6 +34,7 @@ brew 'wget'
 # Development
 brew 'tmate'
 brew 'rbenv'
+brew 'tfenv'
 brew 'python3'
 brew 'ansible'
 brew 'ruby-build'
