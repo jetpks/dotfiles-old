@@ -52,6 +52,7 @@ brew 'docker-machine-driver-xhyve'
 brew 'vaulted'
 brew 'awscli'
 brew 'dinghy'
+brew 'dateutils'
 cask 'java'
 cask 'monodraw'
 
