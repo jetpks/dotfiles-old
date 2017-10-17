@@ -53,6 +53,8 @@ brew 'vaulted'
 brew 'awscli'
 brew 'dinghy'
 brew 'dateutils'
+brew 'packer'
+brew 'packer-completion'
 cask 'java'
 cask 'monodraw'
 
