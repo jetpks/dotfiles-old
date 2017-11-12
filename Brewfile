@@ -55,6 +55,7 @@ brew 'dinghy'
 brew 'dateutils'
 brew 'packer'
 brew 'packer-completion'
+cask 'chefdk'
 cask 'java'
 cask 'monodraw'
 
