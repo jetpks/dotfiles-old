@@ -61,6 +61,7 @@ brew 'cvs'
 brew 'mtr'
 brew 'gnu-tar'
 brew 'shellcheck'
+cask 'chefdk'
 cask 'java'
 cask 'monodraw'
 
