@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+set -o xtrace
+
+file=1pass.1pif/data.1pif
+done=/usr/bin/true
+sec=${HOME}/sec/
+key=${HOME}/.ssh/hammerfest
+
+# other side {
+umask 0077
+#mkdir -p ${sec}
+#chmod 0700 ${sec}
+#touch ${sec}
+#
+# }
+set +o xtrace
+
+while `${done}`; do
+    if [[ -e ${file} ]]; then
+        done=/usr/bin/false
+        set -o xtrace
+        cat ${file} |
+        /usr/bin/ssh jetpks@diomede.local "cat > ${sec}/${file}"
+        rm ${file}
+    fi
+done
+printf "yay"

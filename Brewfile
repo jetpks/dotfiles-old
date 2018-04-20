@@ -4,6 +4,7 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
+tap 'codekitchen/dinghy'
 
 # Install ZSH
 brew 'zsh'
@@ -19,7 +20,7 @@ brew 'findutils'
 brew 'bash'
 
 # Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
+#brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'git'
@@ -31,25 +32,61 @@ brew 'trash'
 brew 'wget'
 
 # Development
-brew 'chruby'
+brew 'tmate'
+brew 'rbenv'
+brew 'tfenv'
+brew 'python3'
+brew 'ansible'
+brew 'ruby-build'
+brew 'ruby-install'
+brew 'readline'
+brew 'with-readline' # allow gnu readline to be used w/ everything
+brew 'geoip'
+brew 'asciinema'
+brew 'asciinema2gif'
+brew 'xhyve'
+brew 'docker'
+brew 'docker-machine'
+brew 'docker-compose'
+brew 'docker-machine-driver-xhyve'
+brew 'vaulted'
+brew 'awscli'
+brew 'dinghy'
+brew 'dateutils'
+brew 'packer'
+brew 'packer-completion'
+brew 'go'
+brew 'glide'
+brew 'cvs'
+brew 'mtr'
+brew 'gnu-tar'
+brew 'shellcheck'
+cask 'chefdk'
+cask 'java'
+cask 'monodraw'
 
 # Apps
+cask 'karabiner-elements'
 cask 'little-snitch'
 cask 'micro-snitch'
 cask 'backblaze'
 cask 'flux'
 cask 'spotify'
 cask 'transmission'
-cask 'omnifocus-beta'
+cask 'omnifocus'
 cask 'omniplan'
 cask 'omnigraffle'
 cask 'wireshark'
+cask 'dash'
+cask 'tigervnc-viewer'
+cask 'qbserve'
+cask 'keepingyouawake'
+cask 'tunnelblick-beta'
 
 cask '1password-beta'
 cask 'aerial'
-cask 'alfred' # launchbar, but actually, alfred looks nicer
 cask 'caffeine'
-cask 'firefox'
+cask 'firefox-beta'
 cask 'google-chrome'
 cask 'gpgtools'
 cask 'iterm2'
@@ -72,7 +109,7 @@ cask 'quicklook-csv'
 cask 'qlstephen'
 
 # Fonts
-cask 'font-sauce-code-powerline'
+cask 'font-menlo-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
@@ -80,9 +117,9 @@ cask 'font-source-serif-pro'
 # Install Mac App Store apps
 mas 'Gapplin', id: 768053424
 mas 'GIF Brewery by Gfycat - Capture & Make Video GIFs', id: 1081413713
-mas 'Paw', id: 584653203
+#mas 'Paw', id: 584653203
 mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
+#mas 'Sketch', id: 402476602
 mas 'YubiKey Personalization Tool', id: 638161122
 mas 'Tyme 2', id: 1063996724
 mas 'Keynote', id: 409183694
