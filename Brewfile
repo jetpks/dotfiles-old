@@ -43,6 +43,7 @@ cask 'transmission'
 cask 'omnifocus-beta'
 cask 'omniplan'
 cask 'omnigraffle'
+cask 'wireshark'
 
 cask '1password-beta'
 cask 'aerial'
