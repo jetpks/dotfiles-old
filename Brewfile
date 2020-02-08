@@ -1,4 +1,3 @@
-tap "codekitchen/dinghy"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
