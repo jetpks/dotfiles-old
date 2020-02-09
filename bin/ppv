@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Colors first, because they're important
+green="\e[0;32m"
+yellow="\e[1;33m"
+red="\e[0;31m"
+norm="\e[0m"
+if [ ! -e $1 ]; then
+  printf "${yellow}404 NOTFOUND${norm}\t %s\n" $1;
+  exit 404;
+fi
+case ${1: -3} in
+  'erb')
+    if cat $1 | erb -x -T - | ruby -c > /dev/null; then
+      printf "${green}200 OK${norm}\t\t %s\n" $1;
+      exit 0;
+    else
+      printf "${red}500 BROKEN${norm}\t %s\n" $1;
+      exit 500;
+    fi
+    ;;
+  '.pp')
+    if puppet parser --verbose validate $1; then
+      printf "${green}200 OK${norm}\t\t %s\n" $1;
+      exit 0;
+    else
+      printf "${red}500 BROKEN${norm}\t %s\n" $1;
+      exit 500;
+    fi
+    ;;
+  *)
+    printf "${yellow}418 HTCPCP${norm}\t %s\n" $1; #rfc2324
+    exit 418;
+esac
