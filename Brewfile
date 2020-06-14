@@ -1,110 +1,4 @@
-<<<<<<< HEAD
-# Taps
-tap 'homebrew/cask'
-tap 'homebrew/cask-eid'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
-tap 'homebrew/bundle'
-
-# Binaries
-brew 'awscli'
-brew 'bash' # Latest Bash version
-brew 'bat' # "cat" on steroids
-brew 'coreutils' # Those that come with macOS are outdated
-brew 'ffmpeg'
-brew 'git'
-brew 'gnupg2'
-brew 'grep'
-brew 'httpie'
-brew 'hub'
-brew 'mackup'
-brew 'mas' # Mac App Store manager
-brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
-brew 'stripe/stripe-cli/stripe'
-brew 'trash' # Manage the Trash bin
-brew 'tree' # List directories in a tree structure
-brew 'zlib' # Needed for Memcached
-
-# Spatie Medialibrary
-brew 'jpegoptim'
-brew 'optipng'
-brew 'pngquant'
-brew 'svgo'
-brew 'gifsicle'
-
-# Development
-brew 'php'
-brew 'php@7.3'
-brew 'php@7.2'
-brew 'composer'
-brew 'imagemagick'
-brew 'mysql'
-brew 'nginx'
-brew 'node'
-brew 'redis'
-brew 'yarn'
-
-# Apps
-cask '1password'
-cask 'aerial'
-cask 'alfred'
-cask 'bartender'
-cask 'caffeine'
-cask 'discord'
-cask 'docker'
-cask 'firefox'
-cask 'github'
-cask 'google-backup-and-sync'
-cask 'google-chrome'
-cask 'gpg-suite'
-cask 'insomnia'
-cask 'java'
-cask 'mysqlworkbench'
-cask 'phpstorm'
-cask 'screenflow'
-cask 'sip'
-cask 'skype'
-cask 'slack'
-cask 'sublime-text'
-cask 'tableplus'
-cask 'telegram-desktop'
-cask 'there'
-cask 'the-unarchiver'
-cask 'tor-browser'
-cask 'transmission'
-cask 'transmit'
-cask 'vagrant'
-cask 'virtualbox' # Might need to allow access in Security settings
-cask 'virtualbox-extension-pack'
-cask 'vlc'
-cask 'whatsapp'
-
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
-
-# Fonts
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
-cask 'font-roboto-condensed'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
-
-# Mac App Store
-mas 'Byword', id: 420212497
-mas 'Giphy Capture', id: 668208984
-mas 'Keynote', id: 409183694
-mas 'Numbers', id: 409203825
-mas 'Spark', id: 1176895641
-mas 'Things', id: 904280696
-mas 'Tweetbot', id: 1384080005
-=======
+tap "codekitchen/dinghy"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -112,6 +6,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "inst/brew", "ssh://gerrit.instructure.com:29418/brew.git"
+tap "streamlio/formulae"
 brew "ack"
 brew "gdbm"
 brew "libyaml"
@@ -122,11 +17,13 @@ brew "ansible"
 brew "archey"
 brew "asciinema"
 brew "automake"
+brew "aws-iam-authenticator"
 brew "awscli"
 brew "bash"
 brew "bat"
 brew "bison"
 brew "broot"
+brew "libffi"
 brew "chruby"
 brew "consul"
 brew "coreutils"
@@ -136,29 +33,35 @@ brew "docker-machine", link: false
 brew "docker-machine-driver-xhyve"
 brew "findutils"
 brew "fzf"
+brew "geckodriver"
 brew "geoip"
 brew "git"
 brew "git-quick-stats"
 brew "git-review"
-brew "libffi"
-brew "python", link: false
 brew "go"
 brew "glide"
 brew "gmp"
 brew "gnu-tar"
+brew "gnupg"
 brew "gradle"
+brew "python"
 brew "graphviz"
 brew "grep"
 brew "htop"
 brew "ipcalc"
 brew "jq"
+brew "kubernetes-cli", link: false
+brew "krew"
+brew "kustomize"
 brew "libxml2"
 brew "libxmlsec1"
 brew "mas"
 brew "mtr"
+brew "node"
 brew "packer"
 brew "packer-completion"
 brew "parallel"
+brew "pipes-sh"
 brew "pv"
 brew "python@2"
 brew "rename"
@@ -178,14 +81,19 @@ brew "vim"
 brew "wget"
 brew "with-readline"
 brew "xhyve"
+brew "yarn"
 brew "youtube-dl"
 brew "zsh"
 brew "zsh-completions"
 brew "inst/brew/docker-insops"
+brew "streamlio/formulae/pulsar"
 cask "1password-beta"
 cask "aerial"
+cask "alacritty"
 cask "backblaze"
+cask "chromedriver"
 cask "docker"
+cask "firefox"
 cask "firefox-developer-edition"
 cask "font-3270-nerd-font-mono"
 cask "font-andale-mono"
@@ -313,9 +221,9 @@ cask "kindle"
 cask "little-snitch-nightly"
 cask "micro-snitch"
 cask "monodraw"
-cask "nightowl"
 cask "omnifocus"
 cask "omnigraffle"
+cask "phantomjs"
 cask "qbserve"
 cask "qlcolorcode"
 cask "qlmarkdown"
@@ -352,4 +260,3 @@ mas "Tyme 2", id: 1063996724
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
 mas "YubiKey Personalization Tool", id: 638161122
->>>>>>> master
